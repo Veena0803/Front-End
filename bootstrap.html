@@ -1,78 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/styles.css">
-		<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-		<title>Kitty Portfolio</title>
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="Javascript" src="js/alert.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <title>Kitty Portfolio</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
             <div class="row">
-                <div class="col-md-6"><img class="title-logo" src="images/udacity-logo.jpg" alt="udacity-logo"></div>
-                <div class="col-md-6 text-right text-uppercase">
-                    <h1 class="title-super text-thin">Jane Doette</h1>
-                    <h3>Front-end Ninja</h3>
-                </div>
+                <header>
+                    <article>
+                        <div class="col-md-6">
+                            <img class="title-logo" src="images/udacity-logo.jpg" alt="udacity-logo">
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="col-md-6 text-right text-uppercase">
+                            <h1 class="title-super text-thin">VEENA IYER</h1>
+                            <h3>Front-end Ninja</h3>
+                        </div>
+                    </article>
+
             </div>
-			<div class="row">
-			<div class="col-md-12">
-			<hr style="height:1px;border:none;color:#333;background-color:#333;" />
-			</div>
-			</div>
             <div class="row">
                 <div class="col-md-12">
-                    <img class="img-responsive" src="images/kitten1.jpg" alt="kitten" width="1500">
+                    <hr class="hr">
                 </div>
             </div>
+            <header>
+
+        </section>
+
+        <nav id="nav01">
+            <ul id='menu'>
+                <li><a href='#mitten' data-toggle="modal">MITTENS</a>
+                </li>
+                <li><a href='#emmie' data-toggle="modal">EMMIE</a>
+                </li>
+                <li><a href='#daisy' data-toggle="modal">DAISY</a>
+                </li>
+                <li><a href='#ellie' data-toggle="modal">ELLIE</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <section>
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-muted">Featured Work</h2>
+                    <img class="img-responsive" src="images/kitten4.jpg" alt="kitten" width="1500">
                 </div>
             </div>
+        </section>
+
+        <section>
+            <article>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-muted text-thick">Featured Work</h2>
+                    </div>
+                </div>
+            </article>
+
             <div class="row">
-                <div class="col-md-4">
-                    <img class="img-responsive" src="images/kitten5.jpg" alt="kitten" data-toggle="modal" data-target="#project1">
-                    <h3 class="text-uppercase text-center">Mittens</h3>
-                    <h5 class="text-center"><a href="http://lovemeow.com">Link to project</a></h5>
+                <article>
+                    <div class="col-md-4">
+                        <img class="img-responsive cursor-style" src="images/kitten5.jpg" alt="kitten" data-toggle="modal" data-target="#mitten">
+                        <h3 class="text-uppercase text-center">Mittens</h3>
+                        <h5 class="text-center"><a href="http://lovemeow.com">Link to project</a></h5>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="col-md-4">
+
+                        <img class="img-responsive .small-size cursor-style" src="images/kitten1.jpg" alt="kitten" onclick="initRedirect1()">
+                        <img class="img-responsive .small-size cursor-style" src="images/kitten9.jpeg" alt="kitten" onclick="initRedirect2()">
+                        <h3 class="text-uppercase text-center">CLICK ON ME!!</h3>
+                        <h5 class="text-center"><a href="http://www.cutestpaw.com/tag/cats/">Link to project</a></h5>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="col-md-4">
+                        <img class="img-responsive size" src="images/kitten7.jpg" alt="kitten">
+                        <h3 class="text-uppercase text-center">Ellie</h3>
+                        <h5 class="text-center"><a href="http://www.lolcats.com">Link to project</a></h5>
+                    </div>
+                </article>
+            </div>
+    </div>
+    </section>
+
+    <!--Modal-->
+
+    <div class="modal fade" id="mitten" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/kitten7.jpg" alt="kitten" width="350" height="475">
-                    <h3 class="text-uppercase text-center">Daisy</h3>
-                    <h5 class="text-center"><a href="http://www.funnycatpix.com">Link to project</a></h5>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/kitten5.jpg" alt="kitten"> This was my first project in this class. I learned a lot about HTML and CSS.
                 </div>
-				<div class="col-md-4">
-                    <img src="images/kitten4.jpg" alt="kitten" width="350" height="475">
-                    <h3 class="text-uppercase text-center">Ellie</h3>
-                    <h5 class="text-center"><a href="http://www.lolcats.com">Link to project</a></h5>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-		
-
-		<!--Modal-->
-
-			<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-      </div>
-      <div class="modal-body">
-        <img class="img-responsive" src="images/kitten5.jpg" alt="kitten">
-        This was my first project in this class. I learned a lot about HTML and CSS.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
-  </div>
-</div>
-    </body>
-</html>
 
+    <div class="modal fade" id="emmie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/kitten1.jpg" alt="kitten"> Hello all.. My name is Emmie..I'm a small fury animal. Im usually kept indoors..
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="daisy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/kitten9.jpeg" alt="kitten"> Hello.. This is Daisy..I'm a small fury animal. Im usually kept indoors..
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ellie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/kitten7.jpg" alt="kitten"> Hello all.. This is Ellie..I'm a small fury animal. Im usually kept indoors..
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
